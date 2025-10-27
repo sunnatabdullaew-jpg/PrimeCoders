@@ -1,72 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>food</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/fonts.css">
-</head>
-<body>
-    <section>
-        <div class="menu">
-            <div class="menu__right">
-                <img src="./img/Group 1000002252.png" alt="burger" class="menu__img">
-            </div>
-            <div class="menu__left">
-                <div class="menu__cards">
-                    <div class="menu__card">
-                        <img src="./img/min_burger.png" alt="min_burger" class="menu__img__2">
-                        <div class="menu__texter">
-                            <h1 class="menu__title__1">Чикен бургер</h1>
-                        <p class="menu__text__1">200 гр. котлеты + сырный салат + лук + томаты</p>
-                        <h4 class="menu__main__subtitle">5.6</h4>
-                        <div class="menu__plus">
-                            <h4 class="menu__subtitle">22$</h4>
-                            <h1 class="menu__plus__1">+</h1>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="menu__card">
-                        <img src="./img/min_burger.png" alt="min_burger" class="menu__img__2">
-                        <div class="menu__texter">
-                            <h1 class="menu__title__1">Чикен бургер</h1>
-                        <p class="menu__text__1">200 гр. котлеты + сырный салат + лук + томаты</p>
-                        <h4 class="menu__main__subtitle">5.6</h4>
-                        <div class="menu__plus">
-                            <h4 class="menu__subtitle">22$</h4>
-                            <h1 class="menu__plus__1">+</h1>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="menu__card">
-                        <img src="./img/min_burger.png" alt="min_burger" class="menu__img__2">
-                        <div class="menu__texter">
-                            <h1 class="menu__title__1">Чикен бургер</h1>
-                        <p class="menu__text__1">200 гр. котлеты + сырный салат + лук + томаты</p>
-                        <h4 class="menu__main__subtitle">5.6</h4>
-                        <div class="menu__plus">
-                            <h4 class="menu__subtitle">22$</h4>
-                            <h1 class="menu__plus__1">+</h1>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="menu__card">
-                        <img src="./img/min_burger.png" alt="min_burger" class="menu__img__2">
-                        <div class="menu__texter">
-                            <h1 class="menu__title__1">Чикен бургер</h1>
-                        <p class="menu__text__1">200 гр. котлеты + сырный салат + лук + томаты</p>
-                        <h4 class="menu__main__subtitle">5.6</h4>
-                        <div class="menu__plus">
-                            <h4 class="menu__subtitle">22$</h4>
-                            <h1 class="menu__plus__1">+</h1>
-                        </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/fonts.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="navbar container">
+        <ul class="navbar__list">
+          <li class="navbar__item">
+            <a href="#" class="navbar__link">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#" class="navbar__link">Menu</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#" class="navbar__link">About</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#" class="navbar__link">Shop</a>
+          </li>
+        </ul>
+        <div class="navbar__wrap-svg">
+          <svg
+            width="28"
+            height="28"
+            viewBox="0 0 28 28"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.6526 21.8149C17.7128 21.8149 21.8149 17.7128 21.8149 12.6526C21.8149 7.59247 17.7128 3.49039 12.6526 3.49039C7.59244 3.49039 3.49036 7.59247 3.49036 12.6526C3.49036 17.7128 7.59244 21.8149 12.6526 21.8149Z"
+              stroke="black"
+              stroke-width="1.74519"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M19.131 19.1317L24.4321 24.4328"
+              stroke="black"
+              stroke-width="1.74519"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+
+          <svg
+            width="28"
+            height="28"
+            viewBox="0 0 28 28"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13.9615 17.4519C17.8169 17.4519 20.9423 14.3265 20.9423 10.4712C20.9423 6.61578 17.8169 3.49039 13.9615 3.49039C10.1061 3.49039 6.98071 6.61578 6.98071 10.4712C6.98071 14.3265 10.1061 17.4519 13.9615 17.4519Z"
+              stroke="black"
+              stroke-width="1.74519"
+              stroke-miterlimit="10"
+            />
+            <path
+              d="M3.38013 23.5591C4.45294 21.7021 5.99553 20.1602 7.85293 19.0882C9.71033 18.0162 11.8171 17.4519 13.9617 17.4519C16.1062 17.4519 18.213 18.0163 20.0704 19.0884C21.9278 20.1604 23.4703 21.7023 24.5431 23.5593"
+              stroke="black"
+              stroke-width="1.74519"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+
+          <svg
+            width="28"
+            height="28"
+            viewBox="0 0 28 28"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M22.7791 23.5601H5.14397C4.92923 23.5601 4.72203 23.4809 4.56202 23.3377C4.40201 23.1945 4.30043 22.9973 4.27671 22.7839L2.72543 8.82232C2.71188 8.70035 2.72421 8.57689 2.76161 8.46001C2.79901 8.34313 2.86065 8.23545 2.94249 8.14401C3.02434 8.05256 3.12455 7.97941 3.23659 7.92933C3.34863 7.87925 3.46997 7.85336 3.59269 7.85336H24.3303C24.4531 7.85336 24.5744 7.87925 24.6864 7.92933C24.7985 7.97941 24.8987 8.05256 24.9805 8.14401C25.0624 8.23545 25.124 8.34313 25.1614 8.46001C25.1988 8.57689 25.2112 8.70035 25.1976 8.82232L23.6463 22.7839C23.6226 22.9973 23.521 23.1945 23.361 23.3377C23.201 23.4809 22.9938 23.5601 22.7791 23.5601Z"
+              stroke="black"
+              stroke-width="1.74519"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M9.59851 11.3438V7.85337C9.59851 6.69623 10.0582 5.58649 10.8764 4.76827C11.6946 3.95006 12.8044 3.49039 13.9615 3.49039C15.1186 3.49039 16.2284 3.95006 17.0466 4.76827C17.8648 5.58649 18.3245 6.69623 18.3245 7.85337V11.3438"
+              stroke="black"
+              stroke-width="1.74519"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
         </div>
+        <div class="navbar__burger">
+            <div class="navbar__burger-items"></div>
+            <div class="navbar__burger-items"></div>
+            <div class="navbar__burger-items"></div>
+        </div>
+      </div>
+    </nav>
+    <section>
+      <div class="menu container">
+        <div class="menu__right">
+          <img
+            src="./img/Group 1000002252.png"
+            alt="burger"
+            class="menu__img"
+          />
+        </div>
+        <div class="menu__left">
+          <div class="menu__cards">
+            <div class="menu__card">
+              <img
+                src="./img/min_burger.png"
+                alt="min_burger"
+                class="menu__img__2"
+              />
+              <div class="menu__texter">
+                <h1 class="menu__title__1">Чикен бургер</h1>
+                <p class="menu__text__1">
+                  200 гр. котлеты + сырный салат + лук + томаты
+                </p>
+                <h4 class="menu__main__subtitle">5.6</h4>
+                <div class="menu__plus">
+                  <h4 class="menu__subtitle">22$</h4>
+                  <h1 class="menu__plus__1">+</h1>
+                </div>
+              </div>
+            </div>
+            <div class="menu__card">
+              <img
+                src="./img/min_burger.png"
+                alt="min_burger"
+                class="menu__img__2"
+              />
+              <div class="menu__texter">
+                <h1 class="menu__title__1">Чикен бургер</h1>
+                <p class="menu__text__1">
+                  200 гр. котлеты + сырный салат + лук + томаты
+                </p>
+                <h4 class="menu__main__subtitle">5.6</h4>
+                <div class="menu__plus">
+                  <h4 class="menu__subtitle">22$</h4>
+                  <h1 class="menu__plus__1">+</h1>
+                </div>
+              </div>
+            </div>
+            <div class="menu__card">
+              <img
+                src="./img/min_burger.png"
+                alt="min_burger"
+                class="menu__img__2"
+              />
+              <div class="menu__texter">
+                <h1 class="menu__title__1">Чикен бургер</h1>
+                <p class="menu__text__1">
+                  200 гр. котлеты + сырный салат + лук + томаты
+                </p>
+                <h4 class="menu__main__subtitle">5.6</h4>
+                <div class="menu__plus">
+                  <h4 class="menu__subtitle">22$</h4>
+                  <h1 class="menu__plus__1">+</h1>
+                </div>
+              </div>
+            </div>
+            <div class="menu__card">
+              <img
+                src="./img/min_burger.png"
+                alt="min_burger"
+                class="menu__img__2"
+              />
+              <div class="menu__texter">
+                <h1 class="menu__title__1">Чикен бургер</h1>
+                <p class="menu__text__1">
+                  200 гр. котлеты + сырный салат + лук + томаты
+                </p>
+                <h4 class="menu__main__subtitle">5.6</h4>
+                <div class="menu__plus">
+                  <h4 class="menu__subtitle">22$</h4>
+                  <h1 class="menu__plus__1">+</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-</body>
+  </body>
 </html>

@@ -7,17 +7,21 @@
   margin-top: 100px;
 }
 .menu__img {
-  width: 500px;
+  width: 300px;
 }
 .menu__right {
   width: 400px;
+}
+.menu__left {
+  margin-left: 150px;
 }
 .menu__card {
   display: flex;
   flex-direction: column;
   align-items: start;
   padding: 10px;
-  justify-content: end;
+  justify-content: center;
+  gap: 30px;
   width: 250px;
   height: 350px;
   border-radius: 20px;
@@ -27,11 +31,12 @@
 .menu__img__2 {
   width: 200px;
   position: absolute;
-  top: -80px;
+  top: -70px;
 }
 .menu__cards {
+  margin-top: 100px;
   display: flex;
-  width: 50%;
+  width: 80%;
   border-radius: 20px;
   flex-wrap: wrap;
   align-items: center;
@@ -75,6 +80,7 @@
   display: flex;
   align-items: center;
   gap: 80px;
+  margin-top: 50px;
 }
 .menu__plus__1 {
   font-family: "Rubik";
@@ -89,4 +95,95 @@
   align-items: center;
   justify-content: center;
   font-size: 27px;
+}
+@media (max-width: 500px) {
+  .menu {
+    flex-direction: column;
+    width: 95%;
+  }
+  .menu__cards {
+    width: 50%;
+    margin-left: 0;
+    margin-right: 200px;
+  }
+  .menu__left {
+    width: 100%;
+    margin-left: 20px;
+  }
+  .menu .container {
+    width: 90%;
+  }
+  .menu__img {
+    display: none;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+.navbar__list {
+  display: flex;
+  gap: 50px;
+  margin-right: 300px;
+}
+.navbar__link {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 600;
+  color: rgb(19, 18, 18);
+}
+.navbar__link:hover {
+  color: green;
+  transition: all 1s linear;
+  transform: scale(1.3);
+}
+.navbar__wrap-svg {
+  margin-right: 50px;
+}
+.navbar__burger {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3px;
+}
+.navbar__burger-items {
+  width: 30px;
+  height: 3px;
+  background-color: black;
+}
+@media (max-width: 500px) {
+  .navbar {
+    width: 90%;
+    margin: 50px auto;
+  }
+  .navbar__list {
+    display: none;
+  }
+  .navbar__wrap-svg {
+    display: none;
+  }
+  .navbar__burger {
+    display: flex;
+  }
 }/*# sourceMappingURL=style.css.map */
