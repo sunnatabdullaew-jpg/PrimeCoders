@@ -1,0 +1,96 @@
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+
+  &__left {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &__title {
+    width: 655px;
+
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 66px;
+
+    /* or 165% */
+
+    color: #000000;
+  }
+  &__text {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #000000;
+
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    /* or 150% */   
+
+    color: #000000;
+  }
+  &__span {
+    color: rgb(55, 186, 55);
+  }
+  &__button {
+    background-color: rgb(63, 188, 63);
+    border-radius: 20px;
+    width: 150px;
+    height: 50px;
+    color: rgb(255, 255, 255);
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+    &:hover{
+        color: green;
+        background-color: white;
+        transition: all 1s linear;
+        transform: scale(1.1);
+        border: 1px solid green;
+    }
+  }
+
+  &__button__2 {
+    border-radius: 20px;
+    width: 150px;
+    height: 50px;
+    color: rgb(45, 198, 45);
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    background: inherit;
+    border: none;
+    &:hover{
+        color: rgb(255, 255, 255);
+        background-color: green;
+        transition: all 1s linear;
+        transform: scale(1.1);
+    }
+  }
+  &__img{
+    width: 500px;
+  }
+  @media(max-width: 500px){
+    flex-direction: column;
+
+    &__title{
+        font-size: 30px;
+        width: 90%;
+    }
+    &__img{
+        width: 90%;
+        margin-top: 50px;
+    }
+  }
+}
