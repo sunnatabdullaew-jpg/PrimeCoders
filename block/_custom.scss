@@ -1,0 +1,143 @@
+.customer {
+    width: 1700px;
+    height: 600px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+   
+
+
+    &_left {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+
+    &_title {
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 60px;
+        color: #333333;
+    }
+
+    &_text {
+        width: 675px;
+        height: 121px;
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        color: #828282;
+        margin-top: 30px;
+    }
+
+    &_icon_author {
+        display: flex;
+        gap: 20px;
+        margin-top: 50px;
+    }
+
+    &_icon {
+        width: 91px;
+        height: 91px;
+    }
+
+    &_icon_texts {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &_icon_text_1 {
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 33px;
+        color: #90E051;
+    }
+
+    &_icon_text_2 {
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        color: #828282;
+    }
+
+    &_right {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    &_right_img {
+        width: 600px;
+        height: 440px;
+        margin-bottom: 120px;
+        margin-left: 20px;
+    }
+
+    &_right_sml_div {
+        width: 547px;
+        height: 268px;
+        border: 1px solid #eaeaea;
+        border-radius: 10px;
+        background-color: #fff;
+        box-shadow: 0 0 10px #fff;
+        position: absolute;
+        top: 300px;
+        right: 120px;
+    }
+
+    &_right_sml_div_title {
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 35px;
+        color: #333333;
+        margin: 30px 15px;
+    }
+
+    &_right_sml_div_icon {
+        width: 146px;
+        height: 25px;
+        margin: 0px 15px;
+    }
+
+    &_right_sml_div_text {
+        width: 471px;
+        height: 90px;
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        color: #828282;
+        margin: 16px 15px;
+    }
+
+    @media (max-width: 500px) {
+        width: 90%;
+        margin: auto;
+        margin-top: 100px;
+        &_left {
+            margin-top: 0px;
+        }
+        &_right {
+            display: none;
+        }
+        &_text {
+            width: 90%;
+        }
+        &_icon_author{
+            margin-top: 150px;
+        }
+    }
+}

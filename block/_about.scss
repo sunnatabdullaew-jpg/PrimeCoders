@@ -1,0 +1,126 @@
+.about_us {
+    width: 1700px;
+    height: 600px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // gap: 10px;
+    position: relative;
+    top: 250px;
+    // border: 1px solid red;
+
+
+    &_left_div {
+        width: 662px;
+        height: 320px;
+        background: #FFFFFF;
+        box-shadow: 0px 6.10138px 61.0138px rgba(0, 0, 0, 0.1);
+        border-radius: 13px;
+        z-index: 2;
+        margin-top: 20px;
+        
+    }
+
+    &_sml_burger {
+        width: 166px;
+        height: 120px;
+        transform: rotate(-15.45deg);
+        position: absolute;
+        top: 80px;
+        left: 50px;
+    }
+
+    &_left_title {
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40.2598px;
+        line-height: 58px;
+        color: #000000;
+        position: absolute;
+        top: 170px;
+        left: 160px;
+    }
+
+    &_left_text {
+        width: 603.11px;
+        height: 123.75px;
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28.4187px;
+        line-height: 41px;
+        color: #828282;
+        position: absolute;
+        top: 240px;
+        left: 160px;
+    }
+
+    &_right {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &_img {
+        width: 769px;
+        height: 530px;
+        margin-top: -250px;
+    }
+
+    &_burger {
+        width: 258px;
+        height: 211px;
+        position: absolute;
+        top: 340px;
+        right: 20px;
+    }
+    @media (max-width: 500px) {
+        width: 90%;
+        margin-top: 200px;
+        flex-direction: column;
+        &_left_div{
+            width: 90%;
+            height: 600px;
+            background: #FFFFFF;
+            box-shadow: 0px 6.10138px 61.0138px rgba(0, 0, 0, 0.1);
+            border-radius: 13px;
+            
+        }
+        &_left_title {
+            font-family: 'Rubik';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40.2598px;
+            line-height: 58px;
+            color: #000000;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        &_left_text {
+            width: 400px;
+            height: 123.75px;
+            font-family: 'Rubik';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 28.4187px;
+            line-height: 41px;
+            color: #828282;
+            position: absolute;
+            top: 80px;
+            left: 10px;
+        }
+        &_img {
+            width: 95%;
+            height: 350px;
+            margin-top: 60px;
+        }
+        &_burger {
+            display: none;
+        }
+        &_sml_burger {
+            display: none;
+        }
+}
+}
