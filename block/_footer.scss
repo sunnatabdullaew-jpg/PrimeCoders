@@ -1,0 +1,136 @@
+.footer {
+  background-color: #2e2a2a;
+  padding: 20px 0;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  margin-top: 300px;
+
+  .footer-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #218838;
+    font-size: 23px;
+    font-weight: 800;
+  }
+  .wrap {
+    display: flex;
+    gap: 50px;
+    padding: 20px;
+    width: 800px;
+    justify-content: space-between;
+  }
+  .footer-content {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    .subscribe-section {
+      .subscribe-box {
+        margin: auto;
+        margin-bottom: 100px;
+        border: #525456;
+        display: flex;
+        width: 1000px;
+        background: #f3f3f3;
+        padding: 15px;
+        border-radius: 15px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        text-align: center;
+
+        input {
+          width: 600px;
+          padding: 8px;
+          color: #28a745;
+          margin: 10px 0;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+        }
+
+        button {
+          width: 300px;
+          background-color: #28a745;
+          color: #fff;
+          border: none;
+          padding: 8px 15px;
+          border-radius: 19px;
+          font-size: 17px;
+          &:hover {
+            transition: all 1s linear;
+            color: #218838;
+            background-color: inherit;
+            border: 2px solid #28a745;
+          }
+        }
+
+        .social-icons {
+          margin-top: 10px;
+          i {
+            margin: 0 5px;
+            color: #ffffff;
+            &:hover {
+              color: #565656;
+            }
+          }
+        }
+      }
+    }
+
+    .footer-links {
+      .link-column {
+        margin-right: 30px;
+
+        h4 {
+          font-size: 1.2em;
+          margin-bottom: 10px;
+        }
+
+        ul {
+          list-style: none;
+          padding: 0;
+
+          li {
+            margin: 5px 0;
+
+            a {
+              color: #ffffff;
+              text-decoration: none;
+              &:hover {
+                color: #525456;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .contact-info {
+      h4 {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+      }
+
+      p {
+        margin: 5px 0;
+        font-size: 0.9em;
+      }
+    }
+  }
+
+  @media (max-width: 500px) {
+    width: 90%;
+    margin: auto;
+    margin-top: 550px;
+    .wrap {
+      width: 90%;
+    }
+    .subscribe-box {
+    display: none;
+    }
+    .subscribe-section{
+      display: none;
+    }
+  }
+}
